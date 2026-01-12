@@ -4,63 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>☁️ Weather App</h1>
-        <p>Get real-time weather updates for cities around the world</p>
-      </div>
 
-      <div class="search-container">
-        <input
-          type="text"
-          id="cityInput"
-          class="search-input"
-          placeholder="Search for a city..."
-        />
-        <input type="submit" value="Search" />
-      </div>
-    </header>
+      <header>
+        <div class="topApp">
+          <span class="cloudsImage">
+            <img src="src/clouds.svg" alt="" , width="100px"
+          /></span>
+          <h1>weather app</h1>
+        </div>
 
-    <main>
-      <div class="Wather-now">
-        <ul>
-          <li>City</li>
-          <li>Icon</li>
-          <li>Temperature</li>
-        </ul>
-        <ul>
-          <li>Country</li>
-          <li>kind Of Weather</li>
-        </ul>
-        <ul>
-          <li>
-            date
-            <div>Time</div>
-          </li>
-          <li>
-            Humidity
-            <div>%</div>
-          </li>
-          <li>
-            Wind
-            <div>Km/h</div>
-          </li>
-        </ul>
-      </div>
 
-      <div class="Weather-forecast"></div>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-      </ul>
-    </main>
-    <footer>coded Juliana</footer>
+          <div class="subtitle">
+            <p>Get real-time weather updates for cities around the world</p>
+          
+        </div>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="cityInput"
+            class="search-input"
+            placeholder="Search for a city..."
+          />
+          <input type="submit" value="Search" />
+        </div>
+      </header>
+
+      <main>
+        <div class="Wather-now">
+          <ul>
+            <li>City</li>
+            <li>Icon</li>
+            <li>Temperature</li>
+          </ul>
+          <ul>
+            <li>Country</li>
+            <li>kind Of Weather</li>
+          </ul>
+          <ul>
+            <li>
+              date
+              <div>Time</div>
+            </li>
+            <li>
+              Humidity
+              <div>%</div>
+            </li>
+            <li>
+              Wind
+              <div>Km/h</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Weather-forecast"></div>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+        </ul>
+      </main>
+      <footer>coded Juliana</footer>
+    </div>
   </body>
 </html>

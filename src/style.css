@@ -1,0 +1,44 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/373/original/kiwihug-zGZYQQVmXw0-unsplash.jpg?1768247359");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header,
+main {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 600px;
+  padding: 30px;
+  margin: 40px auto;
+}
+
+header {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  margin: 0px;
+}
+.subtitle {
+  font-size: 20px;
+  text-align: center;
+}
+.topApp {
+  text-align: center;
+  width: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 80px;
+}
