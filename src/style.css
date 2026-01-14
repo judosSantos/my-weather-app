@@ -3,15 +3,23 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: "Funnel Display", sans-serif;
+
+  font-weight: lighter;
 }
 
-header,
-main {
-  background-color: white;
-  border-radius: 15px;
+.topApp {
+  background-color: transparent;
   max-width: 600px;
-  padding: 30px;
-  margin: 40px auto;
+  padding: 0 30px 10px 0px;
+  margin: 40px auto 0px;
+  text-align: left;
+  width: 600px;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 header {
@@ -19,26 +27,125 @@ header {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  margin: 30px auto;
+  max-width: 620px;
+  margin: 7px auto;
+  background-color: transparent;
 }
-
 h1 {
   font-size: 40px;
   text-align: center;
   font-weight: 300;
-  margin: 0px;
+  margin: -10px;
+  padding: 34px 13px 5px 0;
 }
-.subtitle {
-  font-size: 20px;
-  text-align: center;
-}
-.topApp {
-  text-align: center;
-  width: 600px;
+main {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 600px;
   padding: 10px;
-  display: flex;
-  flex-direction: row;
+  margin: 10px auto;
+}
+
+.search-form-input {
+  background-color: transparent;
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+  width: 73%;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.search-form-button {
+  background: #f59e0b;
+  padding: 15px 30px;
+  border: 1px solid #f59e0b;
+  font-size: 16px;
+  margin-left: 8px;
+  border-radius: 6px;
+  color: white;
+}
+
+.weather-now {
+  list-style: none;
+  margin: 0;
+  padding: 30px 25px 0 25px;
+
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  grid-template-areas: "city icon temp";
+
   align-items: center;
 
-  gap: 80px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+.country-description {
+  list-style: none;
+  margin: 0;
+  padding: 0px 25px;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "country desc";
+}
+hr {
+  border: none;
+  height: 0.3px;
+  background-color: #f3f3f3;
+}
+/* GRID AREAS */
+.city {
+  grid-area: city;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 12px 20px 0px 0px;
+}
+
+.country {
+  grid-area: country;
+  font-size: 14px;
+  opacity: 0.7;
+  align-self: start;
+}
+
+.icon {
+  grid-area: icon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 80px;
+}
+
+.temp {
+  grid-area: temp;
+  display: flex;
+  justify-content: flex-end; /* empurra pro canto direito */
+  align-items: flex-start;
+}
+
+.degrees {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.unit {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.description {
+  grid-area: desc;
+  text-align: left;
+  font-size: 14px;
+  opacity: 0.7;
+  align-self: start;
 }

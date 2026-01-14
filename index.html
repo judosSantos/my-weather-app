@@ -13,60 +13,41 @@
     />
   </head>
   <body>
+    <header>
+      <div class="topApp">
+        <span class="cloudsImage">
+          <img src="src/undraw.svg" alt="clouds" width="100px" />
+        </span>
+        <h1>weather app</h1>
+      </div>
 
-      <header>
-        <div class="topApp">
-          <span class="cloudsImage">
-            <img src="src/clouds.svg" alt="" , width="100px"
-          /></span>
-          <h1>weather app</h1>
-        </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="cityInput"
+          class="search-form-input"
+          placeholder="Search for a city..."
+        />
+        <input type="submit" value="Search" class="search-form-button" />
+      </div>
+    </header>
 
-
-          <div class="subtitle">
-            <p>Get real-time weather updates for cities around the world</p>
-          
-        </div>
-
-        <div class="search-container">
-          <input
-            type="text"
-            id="cityInput"
-            class="search-input"
-            placeholder="Search for a city..."
-          />
-          <input type="submit" value="Search" />
-        </div>
-      </header>
-
-      <main>
-        <div class="Wather-now">
-          <ul>
-            <li>City</li>
-            <li>Icon</li>
-            <li>Temperature</li>
-          </ul>
-          <ul>
-            <li>Country</li>
-            <li>kind Of Weather</li>
-          </ul>
-          <ul>
-            <li>
-              date
-              <div>Time</div>
-            </li>
-            <li>
-              Humidity
-              <div>%</div>
-            </li>
-            <li>
-              Wind
-              <div>Km/h</div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="Weather-forecast"></div>
+    <main>
+      <ul class="weather-now">
+        <li class="city">London</li>
+        <li class="icon">
+          <img src="src/cloud.svg" alt="Partly cloudy" />
+        </li>
+        <li class="temp">
+          <span class="degrees">12</span><span class="unit">°C</span>
+        </li>
+      </ul>
+      <hr />
+      <ul class="country-description">
+        <li class="country">UK</li>
+        <li class="description">nevoeiro</li>
+      </ul>
+      <div class="Weather-forecast">
         <ul>
           <li>1</li>
           <li>2</li>
@@ -76,8 +57,9 @@
           <li>6</li>
           <li>7</li>
         </ul>
-      </main>
-      <footer>coded Juliana</footer>
-    </div>
+      </div>
+    </main>
+
+    <footer>coded Juliana</footer>
   </body>
 </html>
