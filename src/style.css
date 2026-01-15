@@ -68,7 +68,7 @@ main {
 .weather-now {
   list-style: none;
   margin: 0;
-  padding: 30px 25px 0 25px;
+  padding: 10px 25px 0 25px;
 
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
@@ -88,14 +88,27 @@ main {
   margin: 0;
   padding: 0px 25px;
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "country desc";
+  font-style: italic;
 }
 hr {
   border: none;
   height: 0.3px;
   background-color: #f3f3f3;
+}
+
+.date-description {
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px 5px 25px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "date humidity wind";
+  font-size: 13px;
+  font-weight: 300;
 }
 /* GRID AREAS */
 .city {
@@ -148,6 +161,23 @@ hr {
   font-size: 14px;
   opacity: 0.7;
   align-self: start;
+}
+
+.date {
+  grid-area: date;
+  text-align: left;
+}
+.humidity-grid,
+.wind-grid {
+  text-align: center;
+}
+.humidity {
+  grid-area: humidity;
+  text-align: center;
+}
+.wind {
+  grid-area: wind;
+  text-align: center;
 }
 footer {
   text-align: center;

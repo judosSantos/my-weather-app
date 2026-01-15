@@ -2,10 +2,49 @@ function refreshTemperature(response) {
   let temperatureElement = document.querySelector(".degrees");
   let temperature = response.data.temperature.current;
 
+  let descriptionElement = document.querySelector(".description");
+  let description = response.data.condition.description;
+  descriptionElement.innerHTML = description;
+
   temperatureElement.innerHTML = Math.round(temperature);
 
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
+
+  let countryElement = document.querySelector(".country");
+  country = response.data.country;
+  countryElement.innerHTML = country;
+
+  let humidityElement = document.querySelector(".humidity");
+  let humidity = response.data.temperature.humidity;
+  humidityElement.innerText = `${humidity}%`;
+
+  let windElement = document.querySelector(".wind");
+  let wind = Math.round(response.data.wind.speed);
+  windElement.innerText = `${wind}Km/h`;
+
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}h`;
+
+  let dayElement = document.querySelector(".day");
+  let day = new Date(response.data.time * 1000);
+  dayElement.innerHTML = formatDate(date);
+}
+
+function formatDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let dayName = days[date.getDay()];
+  let dayNumber = date.getDate();
+  return `${dayName}, ${dayNumber}`;
 }
 
 function searchCity(city) {
