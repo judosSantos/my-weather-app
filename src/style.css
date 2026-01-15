@@ -153,3 +153,10 @@ footer {
   text-align: center;
   font-size: 12px;
 }
+a {
+  text-decoration: none;
+  color: #c88e2b;
+}
+a :hover {
+  text-decoration: wavy underline;
+}
