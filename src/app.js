@@ -22,3 +22,5 @@ function handleSearchSubmit(event) {
 
 let searhFormElement = document.querySelector("#search-form");
 searhFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity(Hamburg);
