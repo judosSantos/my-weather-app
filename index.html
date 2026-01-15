@@ -21,20 +21,25 @@
         <h1>weather app</h1>
       </div>
 
-      <div class="search-container">
+      <form class="search-form" id="search-form">
         <input
           type="text"
           id="cityInput"
           class="search-form-input"
           placeholder="Search for a city..."
         />
-        <input type="submit" value="Search" class="search-form-button" />
-      </div>
+        <input
+          type="submit"
+          value="Search"
+          class="search-form-button"
+          id="search-form-button"
+        />
+      </form>
     </header>
 
     <main>
       <ul class="weather-now">
-        <li class="city">London</li>
+        <li class="city" id="city">London</li>
         <li class="icon">
           <img src="src/cloud.svg" alt="Partly cloudy" />
         </li>
@@ -61,5 +66,6 @@
     </main>
 
     <footer>coded Juliana</footer>
+    <script src="src/app.js"></script>
   </body>
 </html>
