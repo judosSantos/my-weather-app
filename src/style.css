@@ -69,48 +69,15 @@ main {
   list-style: none;
   margin: 0;
   padding: 10px 25px 0 25px;
-
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
   grid-template-rows: auto auto;
-
   grid-template-areas: "city icon temp";
-
   align-items: center;
-
   background: rgba(255, 255, 255, 0.85);
   border-radius: 20px;
   max-width: 600px;
 }
-
-.country-description {
-  list-style: none;
-  margin: 0;
-  padding: 0px 25px;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "country desc";
-  font-style: italic;
-}
-hr {
-  border: none;
-  height: 0.3px;
-  background-color: #f3f3f3;
-}
-
-.date-description {
-  list-style: none;
-  margin: 0;
-  padding: 5px 10px 5px 25px;
-  display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "date humidity wind";
-  font-size: 13px;
-  font-weight: 300;
-}
-/* GRID AREAS */
 .city {
   grid-area: city;
   font-size: 40px;
@@ -118,28 +85,22 @@ hr {
   padding: 12px 20px 0px 0px;
 }
 
-.country {
-  grid-area: country;
-  font-size: 14px;
-  opacity: 0.7;
-  align-self: start;
-}
-
 .icon {
   grid-area: icon;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
+  padding: 7px 0 0 43px;
 }
 
 .icon img {
-  width: 80px;
+  width: 70px;
 }
 
 .temp {
   grid-area: temp;
   display: flex;
-  justify-content: flex-end; /* empurra pro canto direito */
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
@@ -155,12 +116,47 @@ hr {
   margin-left: 2px;
 }
 
-.description {
-  grid-area: desc;
-  text-align: left;
+.country-description {
+  list-style: none;
+  margin: 0;
+  padding: 0px 25px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "country desc";
+  font-style: italic;
+}
+hr {
+  border: none;
+  height: 0.3px;
+  background-color: #f3f3f3;
+}
+
+.country {
+  grid-area: country;
   font-size: 14px;
   opacity: 0.7;
   align-self: start;
+}
+
+.description {
+  grid-area: desc;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  align-self: start;
+}
+
+.date-description {
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px 5px 25px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "date humidity wind";
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .date {
