@@ -11,9 +11,9 @@ body {
 .topApp {
   background-color: transparent;
   max-width: 600px;
-  padding: 0 30px 10px 0px;
+  padding: 20px 40px 10px 0px;
   margin: 40px auto 0px;
-  text-align: left;
+  text-align: center;
   width: 600px;
   flex-direction: row;
   align-items: center;
@@ -28,7 +28,7 @@ header {
   font-weight: 300;
   font-style: normal;
   max-width: 620px;
-  margin: 7px auto;
+  margin: 81px auto auto;
   background-color: transparent;
 }
 h1 {
@@ -48,7 +48,7 @@ main {
 
 .search-form-input {
   background-color: transparent;
-  border: 1px solid #f59e0b;
+  border: 1px solid #5c5591;
   border-radius: 6px;
   width: 73%;
   font-size: 12px;
@@ -58,11 +58,17 @@ main {
 .search-form-button {
   background: transparent;
   padding: 10px 35px;
-  border: 1px solid #f59e0b;
+  border: 1px solid #5c5591;
   font-size: 12px;
   margin-left: 8px;
   border-radius: 6px;
-  color: #c07d09;
+  color: #5c5591;
+  transition: all 300ms ease;
+}
+.search-form-button:hover {
+  color: white;
+  background-color: #5c5591;
+  cursor: pointer;
 }
 
 .weather-now {
@@ -119,12 +125,14 @@ main {
 .country-description {
   list-style: none;
   margin: 0;
-  padding: 0px 25px;
+  padding: 5px 25px 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "country desc";
   font-style: italic;
+
+  color: #353157;
 }
 hr {
   border: none;
@@ -181,8 +189,9 @@ footer {
 }
 a {
   text-decoration: none;
-  color: #c88e2b;
+  color: #5c5591;
 }
-a :hover {
-  text-decoration: wavy underline;
+a:hover {
+  text-decoration: underline;
+  color: #c88e2b;
 }
