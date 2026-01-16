@@ -32,7 +32,7 @@ header {
   background-color: transparent;
 }
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   font-weight: 300;
   margin: -10px;
@@ -51,18 +51,18 @@ main {
   border: 1px solid #f59e0b;
   border-radius: 6px;
   width: 73%;
-  font-size: 16px;
-  padding: 15px 20px;
+  font-size: 12px;
+  padding: 10px 20px;
 }
 
 .search-form-button {
-  background: #f59e0b;
-  padding: 15px 30px;
+  background: transparent;
+  padding: 10px 35px;
   border: 1px solid #f59e0b;
-  font-size: 16px;
+  font-size: 12px;
   margin-left: 8px;
   border-radius: 6px;
-  color: white;
+  color: #c07d09;
 }
 
 .weather-now {
@@ -150,7 +150,7 @@ hr {
 .date-description {
   list-style: none;
   margin: 0;
-  padding: 5px 10px 5px 25px;
+  padding: 5px 10px 30px 25px;
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
   grid-template-rows: auto auto;
